@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Search Skill</title>
+<style type="text/css">
+body {
+            background-image: url(https://mapnew.tech/wp-content/uploads/2022/06/Background-Fade-Tech-1-1.png);
+            background-size: 100%;
+        }
+
+</style>
+
+
+</head>
+
+
+
+
+<body >
+<! body background="images/Background-Fade-Tech.jpg">
+<table width="1380" height="489" border="0" align="center">
+  <tbody>
+  <tr>
+      <th colspan="3" bgcolor="#EEF3F7"><img src="https://skills-s3-prod.s3.eu-central-1.amazonaws.com/skypro/image/png/2022/09/08/4652052_2022/09/08%2004:16:0563196c8591dd97.59831894dummy.png" width=100% height="160"></th>
+    </tr>
+    <tr>
+      <td width="220" height="30" bgcolor="#EEF3F7"><h1>&nbsp;</h1></td>
+      <td bgcolor="#EEF3F7"><h1 id="firstHeading">Поиск по навыкам</h1></td>
+      <td width="220" bgcolor="#EEF3F7"><h1>&nbsp;</h1></td>
+    </tr>
+
+    <tr>
+      <td width="220" bgcolor="#EEF3F7">&nbsp;</td>
+      <td height="230" valign="top" bgcolor="#EEF3F7">
+
+<form action="/skill/">
+    <input type="text" name="skill_name" size="80">
+    <input type="submit">
+</form>
+
+       <h2><p>{{message}}</p></h2>
+          <h3>{% for item in items %}
+    <p><a href="/candidate/{{ item.get('id') }}">{{item.get('name') }}</a></p>
+                {% endfor %}
+      </h3></td>
+      <td width="220" valign="top" bgcolor="#EEF3F7"><p>&nbsp;</p></td>
+    </tr>
+    <tr>
+      <td height="30" colspan="3"  align="center" valign="center" bgcolor="#EEF3F7">&nbsp;
+
+         <div class="text_cols">
+          <a href="/">Главная |</a>
+          <a href="/all/"> Все кандидаты |</a>
+          <a href="/search/."> Поиск кандидатов |</a>
+          Поиск навыков
+           </div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>
