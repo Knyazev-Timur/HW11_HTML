@@ -96,4 +96,4 @@ def get_search_skill():
         return render_template('skill.html', error=error)
 
 
-app.run()
+app.run(host="127.0.0.1", port=8080)
